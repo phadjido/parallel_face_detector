@@ -2,9 +2,8 @@
 
 A convolutional face detector in C. 
 
-The uploaded code is sequential but has been derived by the OpenMP version by excluding all related directives and library calls. 
-However, some code transformations the enable thread safety and loop parallelization have remained. 
-
+The uploaded code is sequential but has been derived from the OpenMP version by excluding all related directives and library calls. 
+However, some code transformations the enable thread safety and loop parallelization have not been removed. 
 
 # Related publication 
 
@@ -13,10 +12,13 @@ P. E. Hadjidoukas, V.V. Dimakopoulos, M. Delakis, C. Garcia.
 Concurrency and Computation: Practice & Experience, 21(15):1819-1837, October 2009.
 https://doi.org/10.1002/cpe.1389
 
-We present the development of a novel high-performance face detection system using a neural network-based classification algorithm and an efficient parallelization with OpenMP. 
+Abstract: We present the development of a novel high-performance face detection system using 
+a neural network-based classification algorithm and an efficient parallelization with OpenMP. 
 We discuss the design of the system in detail along with experimental assessment. 
-Our parallelization strategy starts with one level of threads and then exploits nested parallel regions to improve the image-processing capability by up to 19%. 
-The presented system can process images in real-time (38 images/sec) by sustaining almost linear speedups on a system with a quad-core processor and a particular OpenMP runtime library.
+Our parallelization strategy starts with one level of threads and then exploits 
+nested parallel regions to improve the image-processing capability by up to 19%. 
+The presented system can process images in real-time (38 images/sec) by sustaining 
+almost linear speedups on a system with a quad-core processor and a particular OpenMP runtime library.
 
 
 # How to build and run the face detector
@@ -34,4 +36,3 @@ The presented system can process images in real-time (38 images/sec) by sustaini
 # Todo
 
 1. Upload OpenMP versions
-
