@@ -1,0 +1,3 @@
+./images/f4.pgm
+./images/chcolat.pgm
+./images/class57.pgm
